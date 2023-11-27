@@ -159,7 +159,7 @@ db.classes = {
 	samurai : {
 		name	: "Samurai",
 		tier	: "tier1",
-		promoteTo : [ "swordSaint", "weaponMaster" ],
+		promoteTo : [ "swordSaint", "weaponMaster", "lodestar" ],
 		parallel: "mercenary",
 		base	: new Stat(17, 4, 0, 5, 8, 3, 3, 3),
 		growth	: new Stat(10, 10, 0, 15, 20, 15, 0, 10),
@@ -239,7 +239,7 @@ db.classes = {
 	lancer : {
 		name	: "Spear Fighter",
 		tier	: "tier1",
-		promoteTo : [ "sentinel", "basara" ],
+		promoteTo : [ "sentinel", "basara", "greatLord" ],
 		parallel: "knight",
 		base	: new Stat(17, 6, 0, 6, 6, 2, 5, 2),
 		growth	: new Stat(15, 15, 0, 15, 15, 5, 10, 5),
@@ -265,7 +265,7 @@ db.classes = {
 	diviner : {
 		name	: "Diviner",
 		tier	: "tier1",
-		promoteTo : [ "exorcist", "basara" ],
+		promoteTo : [ "exorcist", "basara", "grandmaster" ],
 		parallel: "mage",
 		base	: new Stat(15, 0, 4, 5, 6, 1, 1, 3),
 		growth	: new Stat(0, 5, 15, 10, 10, 5, 0, 10),
@@ -317,7 +317,7 @@ db.classes = {
 	pegKnight : {
 		name	: "Sky Knight",
 		tier	: "tier1",
-		promoteTo : [ "falcoKnight", "kinshiKnight" ],
+		promoteTo : [ "falcoKnight", "kinshiKnight", "darkFalcon" ],
 		parallel: "wyvernRider",
 		base	: new Stat(16, 3, 0, 5, 7, 4, 2, 6),
 		growth	: new Stat(0, 10, 0, 10, 15, 20, 0, 20),
@@ -361,7 +361,7 @@ db.classes = {
 	ninja : {
 		name 	: "Ninja",
 		tier	: "tier1",
-		promoteTo : [ "jounin", "mechanist" ],
+		promoteTo : [ "jounin", "mechanist", "dreadFighter" ],
 		parallel: "cavalier",
 		base 	: new Stat(16, 3, 0, 8, 8, 1, 3, 3),
 		growth 	: new Stat(5, 5, 0, 20, 20, 0, 5, 15),
@@ -451,7 +451,7 @@ db.classes = {
 	fighter : {
 		name	: "Fighter",
 		tier	: "tier1",
-		promoteTo : [ "berserker", "hero" ],
+		promoteTo : [ "berserker", "hero", "blacksmith" ],
 		parallel: "oni",
 		base	: new Stat(19, 7, 0, 6, 6, 2, 4, 1),
 		growth	: new Stat(20, 20, 0, 15, 15, 5, 5, 0),
@@ -469,7 +469,7 @@ db.classes = {
 	mercenary : {
 		name	: "Mercenary",
 		tier	: "tier1",
-		promoteTo : [ "hero", "bowKnight" ],
+		promoteTo : [ "hero", "bowKnight", "vanguard" ],
 		parallel: "samurai",
 		base	: new Stat(17, 5, 0, 7, 6, 2, 5, 2),
 		growth	: new Stat(10, 15, 0, 20, 15, 5, 10, 5),
@@ -539,7 +539,7 @@ db.classes = {
 	mage : {
 		name	: "Dark Mage",
 		tier	: "tier1",
-		promoteTo : [ "sorcerer", "darkKnight" ],
+		promoteTo : [ "sorcerer", "darkKnight", "witch" ],
 		parallel: "diviner",
 		base	: new Stat(16, 0, 6, 3, 3, 1, 3, 5),
 		growth	: new Stat(0, 10, 20, 0, 10, 0, 5, 10),
@@ -595,7 +595,6 @@ db.classes = {
 		base	: new Stat(19, 8, 0, 4, 6, 0, 4, 0),
 		growth	: new Stat(20, 20, 0, 5, 15, 5, 10, 0),
 		maxStat	: new Stat(45, 24, 15, 18, 22, 17, 21, 15),
-		restriction : [ "keaton" ],
 	},
 	
 	wolfssegner : {
@@ -604,22 +603,21 @@ db.classes = {
 		base	: new Stat(22, 11, 0, 6, 7, 1, 7, 1),
 		growth	: new Stat(20, 20, 0, 5, 15, 5, 10, 0),
 		maxStat	: new Stat(65, 36, 25, 29, 31, 26, 32, 26),
-		restriction : [ "keaton" ],
 	},
 
 	singer : {
 		name	: "Songstress",
-		tier	: "special",
+		tier	: "tier1",
+		promoteTo : [ "hero", "sentinel" ],
 		parallel: "troubadour",
-		base	: new Stat(16, 3, 0, 6, 5, 3, 2, 3),
-		growth	: new Stat(0, 10, 0, 20, 20, 20, 0, 0),
+		base	: new Stat(16, 5, 0, 6, 5, 3, 3, 5),
+		growth	: new Stat(0, 10, 0, 15, 15, 20, 0, 10),
 		maxStat	: new Stat(45, 28, 27, 31, 31, 35, 27, 28),
-		restriction : [ "azura" ],
 	},
 	
 	darkFalcon : {
 		name	: "Dark Falcon",
-		tier	: "special",
+		tier	: "tier2",
 		base	: new Stat(17, 4, 7, 5, 9, 4, 3, 9),
 		growth	: new Stat(0, 10, 15, 5, 15, 15, 0, 20),
 		maxStat	: new Stat(45, 27, 32, 28, 33, 32, 26, 34),
@@ -628,7 +626,7 @@ db.classes = {
 	
 	dreadFighter : {
 		name	: "Dread Fighter",
-		tier	: "special",
+		tier	: "tier2",
 		base	: new Stat(19, 8, 3, 6, 8, 1, 6, 9),
 		growth	: new Stat(15, 15, 5, 5, 15, 0, 5, 20),
 		maxStat	: new Stat(55, 32, 28, 29, 31, 26, 29, 34),
@@ -636,7 +634,7 @@ db.classes = {
 	
 	lodestar : {
 		name	: "Lodestar",
-		tier	: "special",
+		tier	: "tier2",
 		base	: new Stat(19, 7, 0, 10, 9, 7, 7, 2),
 		growth	: new Stat(15, 10, 0, 20, 10, 25, 5, 5),
 		maxStat	: new Stat(60, 29, 26, 35, 33, 40, 30, 29),
@@ -645,7 +643,7 @@ db.classes = {
 	
 	greatLord : {
 		name	: "Great Lord",
-		tier	: "special",
+		tier	: "tier2",
 		base	: new Stat(18, 8, 1, 8, 9, 5, 7, 3),
 		growth	: new Stat(15, 15, 0, 10, 10, 15, 10, 5),
 		maxStat	: new Stat(60, 30, 25, 32, 34, 35, 29, 31),
@@ -654,7 +652,7 @@ db.classes = {
 	
 	vanguard : {
 		name	: "Vanguard",
-		tier	: "special",
+		tier	: "tier2",
 		base	: new Stat(21, 10, 0, 6, 7, 3, 9, 1),
 		growth	: new Stat(20, 20, 0, 5, 5, 10, 15, 0),
 		maxStat	: new Stat(65, 36, 25, 29, 30, 30, 32, 27),
@@ -663,7 +661,7 @@ db.classes = {
 	
 	grandmaster : {
 		name	: "Grandmaster",
-		tier	: "special",
+		tier	: "tier2",
 		base	: new Stat(18, 7, 6, 8, 7, 2, 6, 8),
 		growth	: new Stat(10, 15, 15, 15, 5, 0, 5, 15),
 		maxStat	: new Stat(55, 31, 33, 33, 29, 26, 28, 33),
@@ -672,8 +670,8 @@ db.classes = {
 
 	witch : {
 		name	: "Witch",
-		tier	: "special",
-		base	: new Stat(17, 0, 10, 5, 9, 3, 4, 5),
+		tier	: "tier2",
+		base	: new Stat(17, 0, 10, 5, 8, 3, 4, 5),
 		growth	: new Stat(5, 0, 25, 5, 20, 5, 0, 10),
 		maxStat	: new Stat(50, 25, 36, 27, 34, 28, 26, 29),
 		genderLock : "F",
@@ -681,8 +679,8 @@ db.classes = {
 	
 	ballistician : {
 		name	: "Ballistician",
-		tier	: "special",
-		base	: new Stat(18, 10, 0, 7, 2, 4, 3, 1),
+		tier	: "tier2",
+		base	: new Stat(18, 9, 0, 7, 2, 4, 8, 3),
 		growth	: new Stat(5, 25, 0, 15, 0, 10, 5, 5),
 		maxStat	: new Stat(50, 39, 25, 31, 25, 32, 27, 26),
 		genderLock : "M",
@@ -715,8 +713,8 @@ db.character = {
 				Skl	: new Stat(0, 5, 0, 25, 0, 0, 5, 0),
 				Spd	: new Stat(0, 0, 0, 5, 15, 5, 0, 0),
 				Lck	: new Stat(0, 5, 5, 0, 0, 25, 0, 0),
-				Def	: new Stat(0, 0, 0, 0, 0, 5, 10, 5),
-				Res	: new Stat(0, 0, 5, 0, 5, 0, 0, 10),
+				Def	: new Stat(0, 0, 0, 0, 0, 5, 20, 5),
+				Res	: new Stat(0, 0, 5, 0, 5, 0, 0, 20),
 			},
 			bane : {
 				HP	: new Stat(-10, 0, 0, 0, 0, 0, -5, -5),
@@ -735,11 +733,11 @@ db.character = {
 				HP	: new Stat(0, 1, 1, 0, 0, 2, 2, 2),
 				Str	: new Stat(0, 4, 0, 2, 0, 0, 2, 0),
 				Mag	: new Stat(0, 0, 4, 0, 2, 0, 0, 2),
-				Skl	: new Stat(0, 2, 0, 4, 0, 0, 2, 0),
+				Skl	: new Stat(0, 2, 0, 8, 0, 0, 2, 0),
 				Spd	: new Stat(0, 0, 0, 2, 4, 2, 0, 0),
-				Lck	: new Stat(0, 2, 2, 0, 0, 4, 0, 0),
-				Def	: new Stat(0, 0, 0, 0, 0, 2, 4, 2),
-				Res	: new Stat(0, 0, 2, 0, 2, 0, 0, 4),
+				Lck	: new Stat(0, 2, 2, 0, 0, 8, 0, 0),
+				Def	: new Stat(0, 0, 0, 0, 0, 2, 6, 2),
+				Res	: new Stat(0, 0, 2, 0, 2, 0, 0, 6),
 			},
 			bane : {
 				HP	: new Stat(0, -1, -1, 0, 0, -1, -1, -1),
