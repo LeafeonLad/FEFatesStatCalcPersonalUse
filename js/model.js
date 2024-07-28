@@ -1727,4 +1727,19 @@ db.character = {
 		childGrowth	: new Stat(30, 45, 30, 35, 40, 50, 25, 45),
 		revParent	: [ "setsuna", "oboro" ],
 	}),
+
+	marisa : new Character({
+		name	: "Marisa",
+		gender	: "F",
+		gen		: "mother",
+		baseClass : "samurai",
+		classSet  : [ "samurai", "swordSaint" ],
+		base	: {
+			Standard : new BaseStat(5, 23, 7, 2, 12, 13, 9, 4, 3),
+			Revelation : new BaseStat(5, 23, 7, 2, 12, 13, 9, 4, 3),
+		},
+		growth	: new Stat(75, 30, 15, 55, 60, 50, 15, 25),
+		cap		: new Stat(0, -1, 0, 4, 4, 1, -1, 0),
+		route	: "Birthright",
+	}),
 }
